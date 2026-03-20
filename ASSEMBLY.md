@@ -26,6 +26,8 @@ There are no paid marketing affiliations. Related product links are included for
 
 - Read all instructions at least once before beginning
 
+- Review the minor [Compatibility Issues](https://github.com/gojimmypi/ulx3s-elecrow-7inch-hdmi-enclosure?tab=readme-ov-file#compatibility-issues) in the main README file.
+
 ## Common Mistakes
 
 - Using the wrong HDMI connector (only A1-A1 fits)

@@ -43,7 +43,7 @@ Sliced with PrusaClicer 2.9.4.
 The latest [Prusa MK3S](https://help.prusa3d.com/product/mk3s) firmware was used: [`MK3S_MK3S+_FW_3.14.1_MULTILANG.hex`](https://www.prusa3d.com/downloads/firmware/prusa3d_fw_3_14_1_MK3S.zip). Copy [here](./firmware/)
 It is completely intolerant to intermittent sensor failures. See [MINTEMP BED error](https://help.prusa3d.com/article/mintemp-error-and-mintemp-bed_2169)
 
-Default Fusion settings:
+#### Default Fusion settings:
 
 - Refinement: Medium
 - Surface Deviation: 0.036706 mm
@@ -51,7 +51,7 @@ Default Fusion settings:
 - Maximum Edge: 231.60045 mm (no practical limit)
 - Aspect Ration: 21.5 (Controls how "skinny" triangles are allowed to be)
 
-3D Printer Settings:
+#### 3D Printer Settings:
 
 - Ambient temperature: > 75F
 - Print Setting: 0.15 Quality (each layer thickness)
@@ -63,6 +63,40 @@ Default Fusion settings:
 - Otherwise defaults in PrusaSlicer version 2.9.4
 
 Note the 0.4 mm nozzle and 0.15 layer height are coded in the Fusion parameters. ymmv with other print settings.
+
+## 3D Printing Files
+
+There are Autodesk Fusion STL files in the [STL](./STL/README.md) directory for printing to any device.
+
+#### Prusa Files
+
+There are Pruse Slicer Project files and G-Code in the [Prusa](./Prusa/README.md).
+Included are `PrusaSlicer_config_bundle.ini` files for the MK3S, but should adapt easily to other printers.
+
+The "0.15 Quality" has some critical changes in the `User Presets - 0.15mm QUALITY @MK3 - ULX3S Project`
+that were observed to make a difference between print success and failure.
+
+![print_settings_id.jpg](./images/print_settings_id.jpg)
+
+In particular not these changes from defaults:
+
+- print_settings_id = 0.15mm QUALITY @MK3 - ULX3S Project
+
+- seam_position = rear
+
+- brim_width = 5 (can be set to zero if in a warm, stable environment)
+
+- first_layer_speed = 15
+
+- first_layer_extrusion_width = 0.5
+
+- elefant_foot_compensation = 0.05
+
+Other settings to consider:
+
+- Increase infill to 20 - 30% (main print settings)
+
+- Increase the number of perimeters from 2 to 3. (Print Settings - Layers and Perimeters - Vertical shells - Perimeters)
 
 ## Compatibility Issues
 
@@ -153,9 +187,23 @@ There's a tight vertical clearance between the HDMI-HDMI connector board at the 
 
 ## Files
 
-- [Fusion/ExportedParameters.csv](./Fusion/ExportedParameters.csv) Parameters defined in Autodesk Fusion.
-- [Prusa/PrusaSlicer_config_bundle.ini](./Prusa/PrusaSlicer_config_bundle.ini) Prusa MK3S settings used.
+- [bitfiles](./bitfiles/README.md) - Prebuilt FPGA files to get started quickly.
+- [firmware](./firmware/README.md) - Firmware `.hex` files for Prusa MK3S printers.
+- [Fusion/ExportedParameters.csv](./Fusion/ExportedParameters.csv) - Parameters defined in Autodesk Fusion.
+- [Prusa](./Prusa/README.md) - Prusa Slicer Projects and G-Code for the MK3S.
+- [Prusa/PrusaSlicer_config_bundle.ini](./Prusa/PrusaSlicer_config_bundle.ini) - Prusa MK3S settings used.
+- [STL](./STL/README.md) - Enclosure and all parts in STL format printed from Autodesk Fusion.
 
+## Published Files
+
+Currently the original official; files are only located at https://github.com/gojimmypi/ulx3s-elecrow-7inch-hdmi-enclosure
+
+TODO publish to other locations:
+
+- https://www.printables.com/@gojimmypi_17688
+- Thingverse
+- Etsy
+- https://www.elecrow.com/share-projects.html
 
 ## Links
 
