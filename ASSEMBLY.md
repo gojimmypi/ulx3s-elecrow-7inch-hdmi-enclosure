@@ -6,9 +6,9 @@ There are several similar displays. This enclosure is designed for the following
 
 > "_ELECROW 7 Inch Touchscreen Monitor for Raspberry Pi - 1024x600 IPS Capacitive Touch Screen HD Mini LCD Display with Stand Compatible with Raspberry Pi 5/4B/3B+/3B, BB Black_".
 
-Note: This model has no visible front-facing mounting tabs with screw holes, unlike some similar displays.
+Note: This display model has no visible front-facing mounting tabs with screw holes, unlike some similar displays.
 
-If a display is not used, there's an optional blank panel mock-up available instead.
+If a display is not used, there's an optional blank panel mock-up available instead. See the related `Display Mockup` files.
 
 ## Licensing and Marketing Affiliation
 

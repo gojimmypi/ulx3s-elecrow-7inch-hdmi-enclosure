@@ -70,8 +70,23 @@ There are Autodesk Fusion STL files in the [STL](./STL/README.md) directory for 
 
 #### Prusa Files
 
-There are Pruse Slicer Project files and G-Code in the [Prusa](./Prusa/README.md).
+The Pruse Slicer Project files and G-Code are in the [Prusa](./Prusa/README.md) directory.
 Included are `PrusaSlicer_config_bundle.ini` files for the MK3S, but should adapt easily to other printers.
+
+To get started quickly, printing all parts for the Prusa slicer, see:
+
+- `Enclosure Display Side.3mf`<br />
+   <a href="./images/part_enclosure_display_side.jpg" target="_blank"><img src="./images/part_enclosure_display_side.jpg" alt="part_enclosure_display_side" width="150" /></a>
+- `Enclosure ULX3S Side.3mf`<br />
+ <a href="./images/part_enclosure_ulx3s_side.jpg" target="_blank"><img src="./images/part_enclosure_ulx3s_side.jpg" alt="part_enclosure_ulx3s_side" width="150" /></a>
+- `Small parts.3mf`<br />
+  <a href="./images/enclosure_parts.png" target="_blank"><img src="./images/enclosure_parts.png" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a>
+- `Adapter Base Plate Set.3mf`<br />
+  <a href="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" target="_blank"><img src="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a>
+
+Note that the buttons are includes in the small parts set. If a separate color is desired for only the buttons, see the `Button Set` files. <br />
+- <a href="./images/part_button_set.jpg" target="_blank"><img src="./images/part_button_set.jpg" alt="part_button_set" width="150" /></a>
+
 
 The "0.15 Quality" has some critical changes in the `User Presets - 0.15mm QUALITY @MK3 - ULX3S Project`
 that were observed to make a difference between print success and failure.
