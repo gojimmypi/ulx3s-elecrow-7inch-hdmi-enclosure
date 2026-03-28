@@ -53,6 +53,7 @@ It is completely intolerant to intermittent sensor failures. See [MINTEMP BED er
 
 #### 3D Printer Settings:
 
+- Material: PETG
 - Ambient temperature: > 75F
 - Print Setting: 0.15 Quality (each layer thickness)
 - Nozzle: 0.4 mm
@@ -67,6 +68,9 @@ Note the 0.4 mm nozzle and 0.15 layer height are coded in the Fusion parameters.
 ## 3D Printing Files
 
 There are Autodesk Fusion STL files in the [STL](./STL/README.md) directory for printing to any device.
+
+Prototypes were all created using PETG filament. Other filaments may be used. Note the snap-in nature of
+the display expects the right (audio) side of the enclosure to have a bit of flex during assembly.
 
 #### Prusa Files
 

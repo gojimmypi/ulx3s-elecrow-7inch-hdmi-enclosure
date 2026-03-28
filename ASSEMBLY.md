@@ -148,12 +148,14 @@ In addition to the enclosure main body front and back, there are a variety of ot
 | Part | Description |
 | ---- | ----------- |
 | <a href="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" target="_blank"><img src="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket with internal USB restraint |
+| <a href="./images/TODO.jpg" target="_blank"><img src="./images/TODO.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket Top |
+| <a href="./images/TODO.jpg" target="_blank"><img src="./images/TODO.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket Underside Spacers |
 | <a href="./images/part_button_set.jpg" target="_blank"><img src="./images/part_button_set.jpg" alt="part_button_set" width="150" /></a> | Button Set (printed as a single connected piece for handling) |
-| <a href="./images/part_display_bracket.jpg" target="_blank"><img src="./images/part_display_bracket.jpg" alt="part_display_bracket" width="150" /></a> | Display Bracket |
+| <a href="./images/part_display_bracket.jpg" target="_blank"><img src="./images/part_display_bracket.jpg" alt="part_display_bracket" width="150" /></a> | Display Bracket (2x) |
 | <a href="./images/part_display_mockup_blank.jpg" target="_blank"><img src="./images/part_display_mockup_blank.jpg" alt="part_display_mockup_blank" width="150" /></a> | Display Mock-up Blank |
 | <a href="./images/part_enclosure_ulx3s_side.jpg" target="_blank"><img src="./images/part_enclosure_ulx3s_side.jpg" alt="part_enclosure_ulx3s_side" width="150" /></a> | Enclosure ULX3S Side |
 | <a href="./images/part_enclosure_display_side.jpg" target="_blank"><img src="./images/part_enclosure_display_side.jpg" alt="part_enclosure_display_side" width="150" /></a> | Enclosure Display Side |
-| <a href="./images/part_face_spacer.jpg" target="_blank"><img src="./images/part_face_spacer.jpg" alt="part_face_spacer" width="150" /></a> | Face Spacer |
+| <a href="./images/part_face_spacer.jpg" target="_blank"><img src="./images/part_face_spacer.jpg" alt="part_face_spacer" width="150" /></a> | Face Spacer (4x) |
 | <a href="./images/part_j1_cover.jpg" target="_blank"><img src="./images/part_j1_cover.jpg" alt="part_j1_cover" width="150" /></a> | J1 Cover |
 | <a href="./images/part_j2_cover.jpg" target="_blank"><img src="./images/part_j2_cover.jpg" alt="part_j2_cover" width="150" /></a> | J2 Cover |
 | <a href="./images/part_j3_cover.jpg" target="_blank"><img src="./images/part_j3_cover.jpg" alt="part_j3_cover" width="150" /></a> | J3 Cover |
@@ -310,41 +312,61 @@ Due to the recessed panel thickness on the left HDMI / USB side, the enclosure a
 
 First insert the left side of the HDMI display observing the snap-clips on each side of the enclosure.
 
-TODO missing adapter and ULX3S!
-
-![TODO](./images/TODO.jpg)
-
 <a href="./images/display_blank_left_insertion.jpg" target="_blank"><img src="./images/display_blank_left_insertion.jpg" alt="display_blank_left_insertion" width="150" /></a>
+
+The left (HDMI/USB) display enclosure side has slightly thicker snap-in posts. First insert the display on the left.
+
+Ensure the display is snug and resting underneath the snap-in guides.
 
 Lower and press the right side into place while gently pulling the right side panel out. Snap the display into place.
 Note the connectors that are stubbed out as part of the display mock-up.
 
 <a href="./images/display_blank_stubout_view.jpg" target="_blank"><img src="./images/display_blank_stubout_view.jpg" alt="display_blank_stubout_view" width="150" /></a>
 
-## Mount ULX3S to Display
+## Install Display Assembly into Enclosure
 
-These steps apply to either the actual display, or the mock-up which has mounting posts in the same locations.
+Due to the recessed panel thickness on the left HDMI / USB side, the alignment post clips are slightly larger than those on the right.
+
+First insert the left side of the HDMI display observing the snap-clips on each side of the enclosure.
+
+<a href="./images/display_left_insertion.jpg" target="_blank"><img src="./images/display_left_insertion.jpg" alt="display_left_insertion" width="150" /></a>
+
+Lower the right side into place while gently pulling the side panel out and snap the display into place.
+
+Remove orange kapton tape covering top 2 display mounting post M2.5 holes (if present). The bottom 2 posts are not used.
+
+## Mount ULX3S to Display (or Mock-up)
+
+These steps apply to either the HDMI display, or the optional mock-up (above) which has mounting posts in the same locations.
 
 ### Install ULX3S to Raspberry Pi Mounting Adapter
 
-The Elecrow display was designed for the Raspberry Pi. As such, the mounting posts do not line up with the holes on the ULX3S:
+The Elecrow display was designed for the Raspberry Pi, not the ULX3S. As such, the display mounting posts do not line up with the holes on the ULX3S:
 
 <a href="./images/ULX3S_mounting_hole_mismatch_to HDMI_7inch_display.jpg" target="_blank"><img src="./images/ULX3S_mounting_hole_mismatch_to HDMI_7inch_display.jpg" alt="display_blank_stubout_view" width="150" /></a>
 
-Ensure the Mounting Adapter spacers are installed underneath the Mounting Adapter first. These spacers should be the same height as the metal
-spacers on the display.
 
-![TODO](./images/TODO.jpg)
+### Install Mounting Adapter Spacers
 
-Place the Mounting Adapter over the 4 M2.5 mounting posts.
+Ensure the 2 Mounting Adapter Spacers are installed underneath the Mounting Adapter first. These spacers should be the same height as the metal
+spacers on the display. Do not confuse these two spacers with the 4 optional face spacers.
 
-![TODO](./images/TODO.jpg)
+<a href="./images/ulx3s-mounting-adpater-underside.jpg" target="_blank"><img src="./images/ulx3s-mounting-adpater-underside.jpg" alt="ulx3s mounting adpater underside" width="150" /></a>
 
-Secure with either the 4 screws that should have been included with the display, or any other M2.5 x 4 mm screws.
+Place the Mounting Adapter over the 4 Raspberry Pi positioned M2.5 mounting posts.
 
-![TODO](./images/TODO.jpg)
+<a href="./images/elecrow-display-rpi-posts.jpg" target="_blank"><img src="./images/elecrow-display-rpi-posts.jpg" alt="elecrow display rpi posts" width="150" /></a>
 
+Secure the adapter to the display with either the 4 screws that should have been included with the display, or other M2.5 x 4 mm screws.
 
+Beware of components on the bottom side of the ULX3S that may collide with thick pan head screws or spacers.
+
+<a href="./images/ULX3S-Mounting-Adapter-with-strain-relief.jpg" target="_blank"><img src="./images/ULX3S-Mounting-Adapter-with-strain-relief.jpg" alt="ULX3S Mounting Adapter with strain relief" width="150" /></a>
+
+Before proceeding, ensure the spacers are installed under the strain relief as described above.
+
+Confirm that no display components will be crushed under the strain relief. This is unlikely, but there's no guarantee
+that a future version of the display won't relocate some components.
 
 ### Connect the A1-A1 HDMI
 
@@ -353,19 +375,19 @@ and the ULX3S, particularly since there are components on both sides of the boar
 
 As the HDMI display was designed to be used with the Raspberry Pi, use the custom adapter:
 
-![ULX3S-Mounting-Adapter.jpg](./images/ULX3S-Mounting-Adapter.jpg)
+<a href="./images/ULX3S-Mounting-Adapter.jpg" target="_blank"><img src="./images/ULX3S-Mounting-Adapter.jpg" alt="ULX3S Mounting Adapter" width="150" /></a>
 
 After the adapter is secured to the display, attach the ULX3S:
 
-![ULX3S-Mounting-Adapter-with-PCB.jpg](./images/ULX3S-Mounting-Adapter-with-PCB.jpg)
+<a href="./images/ULX3S-Mounting-Adapter-with-PCB.jpg" target="_blank"><img src="./images/ULX3S-Mounting-Adapter-with-PCB.jpg" alt="ULX3S Mounting Adapter with PCB" width="150" /></a>
 
 Next, carefully insert the A1-A1 HDMI connector:
 
-![A1-A1-connector.jpg](./images/A1-A1-connector.jpg)
+<a href="./images/A1-A1-connector.jpg" target="_blank"><img src="./images/A1-A1-connector.jpg" alt="A1-A1 connector" width="150" /></a>
 
 Note the clearance between the ULX3S. There's an unfortunate placement of a white 2-pin header on the display directly below the J2 4 pin header.
 
-![ULX3S-clearance-view.jpg](./images/ULX3S-clearance-view.jpg)
+<a href="./images/ULX3S-clearance-view.jpg" target="_blank"><img src="./images/ULX3S-clearance-view.jpg" alt="ULX3S clearance view" width="150" /></a>
 
 
 If there is no A1-A1 adapter board available, there's enough room for a [short 10 cm A1-A1](https://www.amazon.com/dp/B0F1TBRSMZ/ref=dp_iou_view_item?ie=UTF8&psc=1).
@@ -378,33 +400,23 @@ For reference, see the A1 options for HDMI cables:
 ![A1-HDMI-connector-list.jpg](./images/A1-HDMI-connector-list.jpg)
 
 
-## Install Display Assembly into Enclosure
-
-Due to the recessed panel thickness on the left HDMI / USB side, the alignment post clips are slightly larger than those on the right.
-
-First insert the left side of the HDMI display observing the snap-clips on each side of the enclosure.
-
-<a href="./images/display_left_insertion.jpg" target="_blank"><img src="./images/display_left_insertion.jpg" alt="display_left_insertion" width="150" /></a>
-
-Lower the right side into place while gently pulling the side panel out and snap the display into place.
-
-
-Remove orange kapton tape covering top 2 display mounting post M2.5 holes (if present). The bottom 2 posts are not used.
-
 ## Place Buttons in ULX3S side
 
 There is a small connecting strip (roadway) that keeps all buttons together during printing.
 This ensures the model is treated as a single body during printing and helps prevent parts from being lost during handling.
 
+When printed with PETG, the roadway connections between buttons should be flexible enough to no interfere
+with button operation.
+
 Lay the back of the enclosure (ULX3S side) face down and carefully identify and place each button in the respective holes.
 
-Note that there are some orientation posts on the button shafts to ensure specific alignment.
+Note that there are some orientation posts on the button shafts to ensure specific alignment and prevent rotation.
 
 There are two button roadway clips built into the enclosure face. Snap the roadways in place as shown:
 
+<a href="./images/white_buttons-with-roadway-clip.jpg" target="_blank"><img src="./images/white_buttons-with-roadway-clip.jpg" alt="white buttons with roadway clip" width="150" /></a>
 
-![TODO](./images/TODO.jpg)
-
+The roadway clips are only intended to help keep the button set from falling out when handling the enclosure.
 
 ## Place the HDMI Stub-out
 
@@ -469,6 +481,7 @@ Secure the stand base plate to the display side of the enclosure only, using the
 TODO
 
 ![TODO](./images/TODO.jpg)
+<a href="./images/" target="_blank"><img src="./images/" alt="" width="150" /></a>
 
 
 ## Attach OLED Frame with SSD 1331 Display (Optional)
