@@ -3,7 +3,9 @@
 This is an enclosure for the [ULX3S FPGA + ESP32](https://radiona.org/ulx3s/) development and educational board
 for use with the [Elecrow 7 inch HDMI display](https://www.elecrow.com/rc070s-7-inch-1024-600-ips-hdmi-capacitive-touch-monitor.html).
 
-See:
+The enclosure is not perfect. Some minor remaining ideas for improvement are in the [To-Do list](./TODO.md).
+
+See related links:
 
 - [ULX3S Crowd Supply Campaign](https://www.crowdsupply.com/radiona/ulx3s)
 - [ULS3S from Mouser](https://www.mouser.com/c/?q=ulx3s)
@@ -179,6 +181,7 @@ The Elecrow display was designed for the Raspberry Pi, not the ULX3S. As such th
 - Exit holes for USB cables routed internally from ULX3S. See adapter strain relief block.
 - Adjustable positioning for the display. See left and right display brackets.
 - Air vents in the top and bottom. (assuming a vertical orientation of display)
+- Optional `(Hex Head)`-suffixed files for Stand Mounting Plate and Display Brackets where screw clearance is critical. The default is Philips.
 
 ## Assembly
 

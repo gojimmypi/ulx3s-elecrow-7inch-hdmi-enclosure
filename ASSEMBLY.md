@@ -54,7 +54,9 @@ Re-read all instructions before proceeding. (Yes repeated here, Read the fine ma
 - A soldering iron without a temperature adjuster can be hundreds of degrees too hot for use with threaded inserts,
 particularly the small ones used here. A [vertical heat set press tool](https://www.amazon.com/dp/B0DHKPHKJZ) works well.
 
-- Hex head screws are generally easier to install as compared to philips (cross) or slotted screws.
+- When using a heat-set tool, beware that the brass heating end looks very similar to the brass insert. Do not press any insert beyond the depth of the part face.
+
+- Hex head screws are generally easier to install as compared to Philips (cross) or slotted screws.
 
 - Use caution when subjecting plastic parts to mechanical stress. Ensure there's no debris, strings, or other print-time errors. Consider sanding to fit rather than using force.
 
@@ -97,7 +99,7 @@ Use an insert temperature of about 210 C. Insert gently and steadily. Avoid movi
 
 - 4 each: M3 x D4 x L8,  internal tall posts
 - 2 each: M3 x D4 x L4,  internal short plastic posts
-- 4 each: M3 x D4 x L4,  bottom mounting plate holes
+- 4 each: M3 x D4 x L4,  bottom mounting plate holes; two different mounting plates depending on default Philips or hex drive screws.
 
 ### ULX3S to Elecrow Adapter Bracket
 
@@ -151,7 +153,7 @@ In addition to the enclosure main body front and back, there are a variety of ot
 | <a href="./images/part_USB_restraint_cap.jpg" target="_blank"><img src="./images/part_USB_restraint_cap.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket USB Restraint Cap |
 | <a href="./images/part_adapter_spacer.jpg" target="_blank"><img src="./images/part_adapter_spacer.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket Underside Spacers |
 | <a href="./images/part_button_set.jpg" target="_blank"><img src="./images/part_button_set.jpg" alt="part_button_set" width="150" /></a> | Button Set (printed as a single connected piece for handling) |
-| <a href="./images/part_display_bracket.jpg" target="_blank"><img src="./images/part_display_bracket.jpg" alt="part_display_bracket" width="150" /></a> | Display Bracket (2x) |
+| <a href="./images/part_display_bracket.jpg" target="_blank"><img src="./images/part_display_bracket.jpg" alt="part_display_bracket" width="150" /></a> | Display Bracket (2x); Philips default, see alternative Hex Head screw files. |
 | <a href="./images/part_display_mockup_blank.jpg" target="_blank"><img src="./images/part_display_mockup_blank.jpg" alt="part_display_mockup_blank" width="150" /></a> | Display Mock-up Blank |
 | <a href="./images/part_enclosure_ulx3s_side.jpg" target="_blank"><img src="./images/part_enclosure_ulx3s_side.jpg" alt="part_enclosure_ulx3s_side" width="150" /></a> | Enclosure ULX3S Side |
 | <a href="./images/part_enclosure_display_side.jpg" target="_blank"><img src="./images/part_enclosure_display_side.jpg" alt="part_enclosure_display_side" width="150" /></a> | Enclosure Display Side |
@@ -166,7 +168,7 @@ In addition to the enclosure main body front and back, there are a variety of ot
 | <a href="./images/part_light_pipe_sample.jpg" target="_blank"><img src="./images/part_light_pipe_sample.jpg" alt="part light pipe sample" width="150" /></a> | Light Pipe Sample (not part of the assembly; used to test optic fit)
 | <a href="./images/part_oled_frame.jpg" target="_blank"><img src="./images/part_oled_frame.jpg" alt="part_oled_frame" width="150" /></a> | OLED Frame |
 | <a href="./images/part_stand.jpg" target="_blank"><img src="./images/part_stand.jpg" alt="part_stand" width="150" /></a> | Stand |
-| <a href="./images/part_stand_mounting_plate.jpg" target="_blank"><img src="./images/part_stand_mounting_plate.jpg" alt="part_stand_mounting_plate" width="150" /></a> | Stand Mounting Plate |
+| <a href="./images/part_stand_mounting_plate.jpg" target="_blank"><img src="./images/part_stand_mounting_plate.jpg" alt="part_stand_mounting_plate" width="150" /></a> | Stand Mounting Plate; Philips default, see alternative Hex Head screw files |
 | <a href="./images/part_stubout_set.jpg" target="_blank"><img src="./images/part_stubout_set.jpg" alt="part_stubout_set" width="150" /></a> | Stub-out Set |
 
 ## Instructions
@@ -197,7 +199,9 @@ Note: The fan connector on the Elecrow 7 inch display collides with pins on ULX3
 
 ### Install Brass Inserts on Display Side
 
-Install the 4 M3 brass inserts on the tall enclosure posts.
+Install 4 of the M3 brass heat-set inserts on the tall enclosure posts.
+
+CAUTION: These are the most important mechanical connections, holding the enclosure together. Do not apply too much heat that may deform the posts.
 
 <a href="./images/enclosure_display_side-tall_post_insert-note.jpg" target="_blank"><img src="./images/enclosure_display_side-tall_post_insert-note.jpg" alt="enclosure_display_side" width="150" /></a>
 
@@ -223,7 +227,15 @@ All 4 display posts are also secured internally from above via these posts on th
 Ensure that appropriate flush screws are used for the display mounting brackets and no internal wires are placed over the display
 mounting posts. Otherwise, the enclosure sides may not properly fit.
 
-Install the 4 bottom mounting plate M3 heat inserts in the base of the enclosure display side:
+There are two different mounting plates: the default if for a Philips screw with a 1.3 mm chamfer. There are alternative hex screw files for hex drive screws with a 2 mm chamfer. See files with `(Hex Head)` name suffix.
+
+The Philips hole with a hex screw results in a nearly 1 mm clearance problem:
+
+<a href="./images/hex_vs_philips_chamfer_fit.jpg" target="_blank"><img src="./images/hex_vs_philips_chamfer_fit.jpg" alt="hex vs philips chamfer fit" width="150" /></a>
+
+Setting all the holes to the 2 mm hex size results in Philips screws being recessed too far.
+
+Choose a mounting plate for the screws used, then install the 4 bottom mounting plate M3 heat inserts in the base of the enclosure display side:
 
 <a href="./images/enclosure_stand_mounting_bracket.jpg" target="_blank"><img src="./images/enclosure_stand_mounting_bracket.jpg" alt="enclosure_stand_mounting_bracket" width="150" /></a>
 
@@ -421,7 +433,7 @@ The roadway clips are only intended to help keep the button set from falling out
 
 ## Place the HDMI Stub-out
 
-** WARNING **  Do not attempt to use the external HDMI connector when connected to the ULX3S internally.
+** WARNING **  Do not attempt to use the external HDMI connector when display connected also to the ULX3S internally.
 
 To ensure the second display HDMI connector is not inadvertently used, install the HDMI stub-out panel to block access to the external HDMI connector.
 

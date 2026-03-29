@@ -55,6 +55,9 @@
 - [ ] Improve mounting plate screws and fillets
 - [ ] Add stabilizing bolt hole in stand
 - [ ] Extend post tube to ULX3S board surface at mounting holes
+- [X] Ensure chamfer is deep enough for flat hex head screws; currently only Philips are flush. Issue only with mounting plate. See `M3_Countersink_Chamfer` dimension. A value of 1.3 mm works for Philips, but hex heads protrude a bit. Edit to 2.0 mm. Added second set of files for Hex Head.
+- [ ] Reposition stand mounting screws for symmetry. Recent change extending plate to face broke symmetry.
+- [ ] Consider recess for volume knob
 
 ## Adapter
 
