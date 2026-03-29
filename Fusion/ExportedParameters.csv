@@ -1,8 +1,8 @@
 Name,Unit,Expression,Value,Comments,Favorite
 Bezel_Fit,mm,0.1 mm,0.10,The distance in addition to actual size (X and Y),false
-Wall_Tickness,mm,2 mm,2.00,The enclosure walls,false
+Wall_Thickness,mm,2 mm,2.00,The enclosure walls,false
 Screen_Overlap,mm,3 mm,3.00,"Bezel perimeter covering display, each side",false
-Front_Panel_Bezel_Thickness,mm,2 mm,2.00,The front panel bezel thickness (Z),false
+Front_Panel_Bezel_Thickness,mm,1.95 mm,1.95,The front panel bezel thickness (Z),false
 Display_Thickness,mm,5 mm,5.00,"Display only, excluding space above, excluding PCB thickness",false
 Display_Post_Diameter,mm,6 mm,6.00,Hole Diameter,false
 Bezel_Top,mm,28 mm,28.00,"Height beyond top of display, room for mounting screw (Y)",false
@@ -11,49 +11,92 @@ Display_PCB_Thickness,mm,1.5 mm,1.50,"Exact PCB thickness, not including space t
 Ribbon_Cable_Opening,mm,53 mm,53.00,Actual cable ~ 51 mm wide,false
 Ribbon_Cable_Position,mm,8 mm,8.00,Distance from enclosure edge,false
 Display_Post_Height,mm,4 mm,4.00,"Spacers mounted on HDMI PCB, not including PCB thickness",false
-Display_Clip_Thickness,mm,1.2 mm,1.20,Overhang length: Distance from enclosure wall to edge of clip holding display in place,false
+Display_Clip_Thickness,mm,1.2 mm + ( 3 * Printer_Nozzle_Diameter ),2.40,Overhang length: Distance from enclosure wall to edge of clip holding display in place,false
 Clip_Width,mm,6 mm,6.00,"Display Clip Width, before fillets",false
 Display_Total_Thickness,mm,Display_Post_Height + Display_Thickness + Display_Airgap + Display_PCB_Thickness,12.00,Total Display Fit: 12 mm,false
 Display_Airgap,mm,1.5 mm,1.50,Distance between metal permiter and display controller PCB,false
 USB_Exit_Cable_Diameter,mm,4.5 mm,4.50,Does not include restraint,false
 Enclosure_ULX3S_Side,mm,HDMI_Adapter_Board + 0.5 mm - 4 mm,12.00,16 mm == HDMI adapter,false
 Button_Post_Diameter,mm,6 mm,6.00,"Button Post, needing slightly larger hole",false
-Button_Hole,mm,Button_Post_Diameter + 0.3 mm,6.30,Button Post plus  a small margin to avoid friction,false
-Button_Column_Diameter,mm,Button_Hole + ( ( 2 * 1.1 ) * 1 mm ),8.50,Total Diameter of Button Post Solid,false
+Button_Hole,mm,Button_Post_Diameter + Button_Shaft_Fit,6.40,Button Post plus  a small margin to avoid friction,false
+Button_Column_Diameter,mm,Button_Hole + ( ( 2 * 1.1 ) * 1 mm ),8.60,Total Diameter of Button Post Solid,false
 Button_From_PCB,mm,14.5 mm,14.50,Distance from button top to display PCB surface,false
 Button_Post_Height,mm,Bezel_Bottom - Button_From_PCB,5.50,Distance from reference plan to button top minus 2 mm post end. TODO rear display spacing,false
-Light_Pipe_Diameter,mm,2.1 mm,2.10,Actual spec: 2 mm,false
-LIght_Pipe_Hole,mm,1.8 mm,1.80,Assumes 2mm PMMA ,false
+Light_Pipe_Diameter,mm,( 2.54 mm - Printer_Nozzle_Diameter ),2.14,"Actual spec: 2 mm; Nozzle: 0.4, the desired min space between holes",false
+LIght_Pipe_Hole,mm,1.9 mm,1.90,Display Face Stop; Assumes 2mm PMMA ,false
 Alignment_Post_Hole,mm,2 mm,2.00,"Face-to-face alignment posts, see also hole",false
 Alignment_post,mm,Alignment_Post_Hole - 0.2 mm,1.80,"Face-to-face alignment post hole, see also post",false
 HDMI_Adapter_Board,mm,15.5 mm,15.50,Vertical Measured Distance,false
 ULXS3_PCB_Top_Ref,mm,9.5 mm,9.50,Measured distance from rear face of HDMI display PC Board to top of ULX3S board,false
 ULX3S_Button_Top_ref,mm,ULXS3_PCB_Top_Ref + 5 mm,14.50,Reference distance from rear face of HDMI display PC Board to top of buttons,false
 ULX3S_Button_Head,mm,2 mm,2.00,buttonpost impact head thickness,false
-Light_Pipe_Box_Length,mm,Enclosure_ULX3S_Side - ULXS3_PCB_Top_Ref,2.50,Calculated distance from inside face to top of LED on PB board,false
+Light_Pipe_Box_Length,mm,5.5 mm,5.50,Calculated distance from inside face to top of LED on PB board for Light Pipe box,false
 USB_Strain_Relief_Post_Width,mm,12 mm,12.00,Vertical posts for internal USB cable routing,false
-USB_Strain_Relief_Brace_Position,mm,( USB_Strain_Relief_Post_Width / 2 ) - ( Wall_Tickness / 2 ),5.00,distance from edge of strain relief to center of perpendicular brace,false
+USB_Strain_Relief_Brace_Position,mm,( USB_Strain_Relief_Post_Width / 2 ) - ( Wall_Thickness / 2 ),5.00,distance from edge of strain relief to center of perpendicular brace,false
 M3_Insert_Hole,mm,4.1 mm,4.10,"Smooth diameter measured =4.26, knurl = 4.96",false
-Mounting_Post_Height,mm,Front_Panel_Bezel_Thickness + Display_Total_Thickness + Enclosure_ULX3S_Side,26.00,,false
-M3_Screw_Hole,mm,3.05 mm,3.05,Includes tolderance: measured 2.95,false
-Rear_Face_Thickness,mm,Front_Panel_Bezel_Thickness,2.00,,false
-Assembly_Post_Position,mm,Wall_Tickness + ( Assembly_Mounting_Post_Diameter / 2 ) + 0.2 mm,6.30,Distance for both X and Y from outer perimeter face,false
+Mounting_Post_Height,mm,Front_Panel_Bezel_Thickness + Display_Total_Thickness + Enclosure_ULX3S_Side,25.95,,false
+M3_Screw_Hole,mm,3.1 mm,3.10,Includes tolderance: measured 2.95,false
+Rear_Face_Thickness,mm,Front_Panel_Bezel_Thickness,1.95,13 * 0.15 (print height),false
+Assembly_Post_Position,mm,Wall_Thickness + ( Assembly_Mounting_Post_Diameter / 2 ) + Final_Enclosure_Fillet + 0.4 mm,8.50,"Distance for both X and Y from outer perimeter face. Ensure post does not collidate with inner fillets, plus an additional fit.",false
 Assembly_Mounting_Post_Diameter,mm,2 * M3_Insert_Hole,8.20,Post the conencts front and back via m3 screws,false
 Strain_Relief_Height,mm,ULXS3_PCB_Top_Ref + 2.5 mm,12.00,,false
 Display_Offset_Post_Height,mm,Mounting_Post_Height - ( Front_Panel_Bezel_Thickness + Display_Total_Thickness ),12.00,Distance from back to top of metal display posts,false
 ULX3S_Offset_Post_Height,mm,Mounting_Post_Height - ( Front_Panel_Bezel_Thickness + Display_Total_Thickness + ULXS3_PCB_Top_Ref + ULX3S_Mounting_Post_Height ),-1.50,Distance from back to top of ULX3S mounting posts,false
 ULX3S_Mounting_Post_Height,mm,4 mm,4.00,Screw alternatives: typically the 4 mm metal hex spacers that ship with the display,false
 USB_Strain_Relief_Post_Thickness,mm,4 mm,4.00,Two part posts to route internal USB to ULX3S,false
-Audio_Cable_Diameter,mm,2.5 mm,2.50,"External connection from ULX3S, possibly re-routed to display input",false
+Audio_Cable_Diameter,mm,3.05 mm,3.05,"External connection from ULX3S, possibly re-routed to display input",false
 Speaker_Slot_Width,mm,1.4 mm,1.40,,false
 Speaker_Slot_Length,mm,10 mm,10.00,"Longest slot, short ones at 60%",false
-Header_Block_Perimeter,mm,( ( 2.54 / 2 ) * 1.0 mm ) + 0.1 mm,1.37,Hole size,false
-Button_Shaft_Fit,mm,0.3 mm,0.30,Hole diameter delta for button shaft size,false
-Stand_Height,mm,30 mm,30.00,Distance from base face to ULX3S enclosure face,false
-Stand_Mounting_Plate_Thickness,mm,3.20 mm - 0.1 mm,3.10,"Driven measurement of opening, minus a snug fit adjustment",false
+Header_Block_Perimeter,mm,( ( 2.54 / 2 ) * 1.0 mm ) + 0.23 mm,1.50,Hole size,false
+Button_Shaft_Fit,mm,0.4 mm,0.40,Hole diameter delta for button shaft size,false
+Stand_Height,mm,21 mm,21.00,Distance from base face to ULX3S enclosure face. Must be greater than 21 mm,false
+Stand_Mounting_Plate_Thickness,mm,3.20 mm - 0.25 mm,2.95,"Driven measurement of opening, minus a snug fit adjustment",false
 Display_Mount_Adjustment,mm,2 mm,2.00,Distance the M3 screw can move up and down to adjust screen position,false
 M3_Countersink_Chamfer,mm,1.3 mm,1.30,Flat-head (countersunk) screw chamfer,false
 OLED_WIDTH,mm,27.3 mm,27.30,Spec width,false
 OLED_HEIGHT,mm,30.7 mm,30.70,Spec Height,false
 OLED_FIT,mm,1 mm,1.00,Insertion fit wrt spec,false
 Display_Position_Bracket_Thickness,mm,3 mm,3.00,The separate bracket bosy that holds the display posts.,false
+OLED_Frame_Cavity_Depth,mm,5.5 mm,5.50,"Includes spacing sor solder posts above, below, and plastic spacer.",false
+OLED_Face_Frame_Thickness,mm,1.3 mm,1.30,The raised face on the OLD display,false
+Header_Block_End_Spacing,mm,1.96 mm,1.96,Length-wise distance from last pin to end of pastic header with room for insertion,false
+OLED_Glass_Thickness,mm,0.5 mm,0.50,"The OLED display, not including the PCB board",false
+Printer_Nozzle_Diameter,mm,0.4 mm,0.40,,false
+Printer_Layer_Height,mm,0.15 mm,0.15,Typically used for light pipe stops: 2 layers,false
+gojimmypi_chamfer,mm,0.25 mm,0.25,letter chamfer,false
+OLED_Mounting_Screw_Depth,mm,Rear_Face_Thickness + 5 mm,6.95,Total distance from face to bottom of post. Hole is closed at bottom by 1 mm.,false
+USB_Panel_Recess_Depth,mm,1 mm,1.00,"A 2 mm panel is too thick for USB connector, so offset with a recess",false
+Stubout_Frame_Width,mm,5 * Printer_Nozzle_Diameter,2.00,Typically 1 nozzel width for the related thickness,false
+HDMI_Large_Fillet,mm,4 mm,4.00,"The adjustment on the narrow side of the connector, larger radious",false
+HDMI_Small_Fillet,mm,1 mm,1.00,"The larger side of the connector, smaller fillet",false
+HDMI_Cable_Diameter,mm,5 mm,5.00,Internal HDMI routing cable diameter,false
+Mouse_Ear_Size,mm,12 mm,12.00,3D Printing Bed Adhesion Aid,false
+Mouse_Ear_Overlap,mm,2 mm,2.00,Distance into the model: keep in mind fillet diameter.,false
+Final_Enclosure_Fillet,mm,2 mm,2.00,Final enclosure box edge fillets,false
+Mounting_Post_Fit,mm,0.5 mm,0.50,Shorten actual assembly mounting posts for appropriate fit,false
+HDMI_Recess_Width,mm,20 mm,20.00,Thick face recess to accept maxium size HDMI cable end housing,false
+HDMI_Recess_Height,mm,12 mm,12.00,Thick face recess to accept full size cable end housing,false
+HDMI_Hole_Height,mm,6.2 mm,6.20,Actual opening size through enclosure. See also recess values,false
+HDMI_Hole_Width,mm,15 mm,15.00,Actual opening size through enclosure. See also recess values,false
+Standing_Mounting_Plate_Side_Fit,mm,0.2 mm,0.20,Reduces size on each side of the mounting plate from slot edge.,false
+Display_Clip_Height,mm,Display_Post_Height - 0.25 mm,3.75,"Clip heigh from enclosure split: the size of display posts, minus a small amount of fillet",false
+Face_USB_HDMI_Recess,mm,1 mm,1.00,"The enclosure thickness interferes with cable end housing, so thin it.",false
+HDMI_Exit_Cable_Diameter,mm,6.25 mm,6.25,,false
+NOT_USED,mm,0 mm,0.00,Disabled feature for reference,false
+M2_5_Screw_Hole,mm,2.6 mm,2.60,,false
+USB_Panel_Hole_Width,mm,7.75 mm,7.75,,false
+Keyhole_Lanyard_Frame_Width,mm,9 mm,9.00,Distance from center of keyhole hanger for frame,false
+Keyhole_Lanyard_Frame_Thickness,mm,2 mm,2.00,,false
+Lanyard_Keychain_Loop_Diameter,mm,30 mm,30.00,,false
+Lanyard_Keychain_Material_Diameter,mm,4 mm,4.00,The part diameter that needs to fit in the slot,false
+M3_Heatset_Insert_Fillet,mm,0.5 mm,0.50,,false
+Display_Stubout_Overlap,mm,1 mm,1.00,,false
+Display_Stubout_Thickness,mm,13 * Printer_Layer_Height,1.95,,false
+M2_Insert_Hole,mm,3.1 mm,3.10,,false
+Button_Roadway_Width,mm,4 * Printer_Nozzle_Diameter,1.60,Increments of Print Nozzle Diameter for button group roadway holder,false
+Button_Roadway_Base_Width,mm,4 mm,4.00,,false
+Button_Roadway_Thickness,mm,2 * Printer_Layer_Height,0.30,"Integrale number of layer heeights to secure buttons, but not interfere",false
+Button_Roadway_Base_Length,mm,6 mm,6.00,,false
+Final_Fillet_Radius,mm,Front_Panel_Bezel_Thickness - 0.05 mm,1.90,Ever so slightly less than face thickness,false
+Face_Stubout_Thickness,mm,6 * Printer_Layer_Height,0.90,Thin enough to be flexible,false
+M2_5_Insert_Hole,mm,3.2 mm,3.20,Brass insert hole for M2.5 screw ,false
