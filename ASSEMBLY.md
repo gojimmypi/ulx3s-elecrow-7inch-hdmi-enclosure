@@ -148,8 +148,8 @@ In addition to the enclosure main body front and back, there are a variety of ot
 | Part | Description |
 | ---- | ----------- |
 | <a href="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" target="_blank"><img src="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket with internal USB restraint |
-| <a href="./images/TODO.jpg" target="_blank"><img src="./images/TODO.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket Top |
-| <a href="./images/TODO.jpg" target="_blank"><img src="./images/TODO.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket Underside Spacers |
+| <a href="./images/part_USB_restraint_cap.jpg" target="_blank"><img src="./images/part_USB_restraint_cap.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket USB Restraint Cap |
+| <a href="./images/part_adapter_spacer.jpg" target="_blank"><img src="./images/part_adapter_spacer.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a> | Adapter Mounting Bracket Underside Spacers |
 | <a href="./images/part_button_set.jpg" target="_blank"><img src="./images/part_button_set.jpg" alt="part_button_set" width="150" /></a> | Button Set (printed as a single connected piece for handling) |
 | <a href="./images/part_display_bracket.jpg" target="_blank"><img src="./images/part_display_bracket.jpg" alt="part_display_bracket" width="150" /></a> | Display Bracket (2x) |
 | <a href="./images/part_display_mockup_blank.jpg" target="_blank"><img src="./images/part_display_mockup_blank.jpg" alt="part_display_mockup_blank" width="150" /></a> | Display Mock-up Blank |
@@ -349,7 +349,8 @@ The Elecrow display was designed for the Raspberry Pi, not the ULX3S. As such, t
 ### Install Mounting Adapter Spacers
 
 Ensure the 2 Mounting Adapter Spacers are installed underneath the Mounting Adapter first. These spacers should be the same height as the metal
-spacers on the display. Do not confuse these two spacers with the 4 optional face spacers.
+spacers on the display. Do not confuse these two spacers with the 4 optional face spacers. The adapter spacers have a single printed layer on one end (no visible hole)
+to protect the display from the metal insert. The side with the hole also has no chamfer, as the screw enters from the adapter side.
 
 <a href="./images/ulx3s-mounting-adpater-underside.jpg" target="_blank"><img src="./images/ulx3s-mounting-adpater-underside.jpg" alt="ulx3s mounting adpater underside" width="150" /></a>
 
