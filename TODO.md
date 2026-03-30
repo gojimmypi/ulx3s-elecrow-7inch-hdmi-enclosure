@@ -58,6 +58,7 @@
 - [X] Ensure chamfer is deep enough for flat hex head screws; currently only Philips are flush. Issue only with mounting plate. See `M3_Countersink_Chamfer` dimension. A value of 1.3 mm works for Philips, but hex heads protrude a bit. Edit to 2.0 mm. Added second set of files for Hex Head.
 - [ ] Reposition stand mounting screws for symmetry. Recent change extending plate to face broke symmetry.
 - [ ] Consider recess for volume knob
+- [x] Keyhole adapter should be a single piece; offset moved when thickness shrank to integral number of print layers: 1.95 mm
 
 ## Adapter
 

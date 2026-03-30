@@ -163,8 +163,7 @@ In addition to the enclosure main body front and back, there are a variety of ot
 | <a href="./images/part_j3_cover.jpg" target="_blank"><img src="./images/part_j3_cover.jpg" alt="part_j3_cover" width="150" /></a> | J3 Cover |
 | <a href="./images/part_j4_cover.jpg" target="_blank"><img src="./images/part_j4_cover.jpg" alt="part_j4_cover" width="150" /></a> | J4 Cover |
 | <a href="./images/part_keyhole_adapter.jpg" target="_blank"><img src="./images/part_keyhole_adapter.jpg" alt="part_keyhole_adapter" width="150" /></a> | Keyhole Adapter |
-| <a href="./images/part_keyhole_face_insert.jpg" target="_blank"><img src="./images/part_keyhole_face_insert.jpg" alt="part_keyhole_face_insert" width="150" /></a> | Keyhole Face Insert |
-| <a href="./images/part_keyhole_internal_disc.jpg" target="_blank"><img src="./images/part_keyhole_internal_disc.jpg" alt="part_keyhole_internal_disc" width="150" /></a> | Keyhole Internal Disc |
+| <a href="./images/part_keyhole_internal_adapter.jpg" target="_blank"><img src="./images/part_keyhole_internal_adapter.jpg" alt="part keyhole internal dapter" width="150" /></a> | Keyhole Internal Adapter Face Insert |
 | <a href="./images/part_light_pipe_sample.jpg" target="_blank"><img src="./images/part_light_pipe_sample.jpg" alt="part light pipe sample" width="150" /></a> | Light Pipe Sample (not part of the assembly; used to test optic fit)
 | <a href="./images/part_oled_frame.jpg" target="_blank"><img src="./images/part_oled_frame.jpg" alt="part_oled_frame" width="150" /></a> | OLED Frame |
 | <a href="./images/part_stand.jpg" target="_blank"><img src="./images/part_stand.jpg" alt="part_stand" width="150" /></a> | Stand |
@@ -310,7 +309,7 @@ The ULX3S side of the enclosure includes a keyhole in case you have a project to
 
 <a href="./images/keyhole.jpg" target="_blank"><img src="./images/keyhole.jpg" alt="keyhole" width="150" /></a>
 
-If using the keyhole-to-lanyard adapter, install the one brass insert in the rear (internal) circular disc.
+If using the keyhole-to-lanyard adapter, install the one brass insert in the rear (internal) keyhole internal adapter (circular disc).
 
 Only install the inserts. Do not mount the keyhole screen at this time to allow the display to lay flat during assembly.
 
@@ -415,6 +414,8 @@ For reference, see the A1 options for HDMI cables:
 
 ## Place Buttons in ULX3S side
 
+Ensure the holes and buttons are clear of any debris, print strings, or other obstructions.
+
 There is a small connecting strip (roadway) that keeps all buttons together during printing.
 This ensures the model is treated as a single body during printing and helps prevent parts from being lost during handling.
 
@@ -430,6 +431,11 @@ There are two button roadway clips built into the enclosure face. Snap the roadw
 <a href="./images/white_buttons-with-roadway-clip.jpg" target="_blank"><img src="./images/white_buttons-with-roadway-clip.jpg" alt="white buttons with roadway clip" width="150" /></a>
 
 The roadway clips are only intended to help keep the button set from falling out when handling the enclosure.
+
+Before assembly, ensure each of the buttons moves freely in the respective enclosure face hole.
+The tactile button feedback offers little force to push the button. If there's any resistance,
+resolve before proceeding. The holes should be accurately sized.
+A little buff of sandpaper will typically resolve any print-time imperfections.
 
 ## Place the HDMI Stub-out
 
@@ -491,11 +497,21 @@ Secure the stand base plate to the display side of the enclosure only, using the
 
 ## Assemble Lanyard Keyhole Adapter (optional)
 
-TODO
+There are two parts to the keyhole lanyard adapter:
 
-![TODO](./images/TODO.jpg)
-<a href="./images/" target="_blank"><img src="./images/" alt="" width="150" /></a>
+- Internal Keyhole Face Insert and stress relief disc
+- Keyhole External Adapter to hold metal key-chain ring
+- Optional 3D-printed ring
 
+One M3 x 4D x 4L heat set insert is needed to secure the two parts together:
+
+<a href="./images/keyhole_adapter.jpg" target="_blank"><img src="./images/keyhole_adapter.jpg" alt="keyhole internal and external adapter" width="150" /></a>
+
+Align the disc with keyhole extrusion on the inside of the case, install a ring if desired, and then screw the external keyhole adapter using an M3 x 10 mm screw.
+
+<a href="./images/ulx3s_keyhole_adpater_badge.jpg" target="_blank"><img src="./images/ulx3s_keyhole_adpater_badge.jpg" alt="keyhole internal and external adapter with hackaday lanyard" width="150" /></a>
+
+Keep in mind the display is relatively heavy for a 3D printed part. Care should be taken to ensure too much stress is not applied to the lanyard.
 
 ## Attach OLED Frame with SSD 1331 Display (Optional)
 
