@@ -1,7 +1,8 @@
 # ULX3S 7inch HDMI Diplay-H Elecrow Enclosure
 
 This is an enclosure for the [ULX3S FPGA + ESP32](https://radiona.org/ulx3s/) development and educational board
-for use with the [Elecrow 7 inch HDMI display](https://www.elecrow.com/rc070s-7-inch-1024-600-ips-hdmi-capacitive-touch-monitor.html).
+for use with the [Elecrow 7 inch HDMI display](https://www.elecrow.com/rc070s-7-inch-1024-600-ips-hdmi-capacitive-touch-monitor.html),
+such as [this one available on Amazon](https://www.amazon.com/dp/B08FMNDDSL).
 
 The enclosure is not perfect. Some minor remaining ideas for improvement are in the [To-Do list](./TODO.md).
 
@@ -60,7 +61,7 @@ the display expects the right (audio) side of the enclosure to have a bit of fle
 The Pruse Slicer Project files and G-Code are in the [Prusa](./Prusa/README.md) directory.
 Included are `PrusaSlicer_config_bundle.ini` files for the MK3S, but should adapt easily to other printers.
 
-To get started quickly, printing all parts for the Prusa slicer, see:
+To [get started](./QUICK_START.md) quickly, printing all parts for the Prusa slicer, see:
 
 - `Enclosure Display Side.3mf`<br />
    <a href="./images/part_enclosure_display_side.jpg" target="_blank"><img src="./images/part_enclosure_display_side.jpg" alt="part_enclosure_display_side" width="150" /></a>
@@ -133,7 +134,9 @@ The Elecrow display was designed for the Raspberry Pi, not the ULX3S. As such th
 
   Do **NOT** use the side panel Elecrow Display HDMI concurrently with the ULX3S connected internally.
 
-  The full-sized HDMI-to-HDMI connector is not specified as being included on all Elecrow product listing at various vendors. If _not_ included, there's room to use an [A1-A1 FPC (Flexible PC)](https://www.amazon.com/dp/B01787KZVG) HDMI Cable. Note some A1 cables reverse one of the HDMI connectors. The desired orientation is having both narrow sides down:
+  The mini-PC Board HDMI-to-HDMI connector is not specified as being included on all Elecrow product listing at various vendors. If _not_ included, there's room to use an [A1-A1 FPC (Flexible PC)](https://www.amazon.com/dp/B01787KZVG) HDMI Cable. Note some A1 cables reverse one of the HDMI connectors. The desired orientation is having both narrow sides in the same orientation:
+
+  <a href="./imagesHDMI-A1-A1-alternative.jpg" target="_blank"><img src="./images/HDMI-A1-A1-alternative.jpg" alt="HDMI A1-A1 alternative" width="150" /></a>
 
   Note when using the ribbon cable HDMI connector, there may be mechanical interference with optional internal fan and/or keyhole mount.
 
