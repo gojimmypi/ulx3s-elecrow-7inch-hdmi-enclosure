@@ -313,6 +313,8 @@ If using the keyhole-to-lanyard adapter, install the one brass insert in the rea
 
 Only install the inserts. Do not mount the keyhole screen at this time to allow the display to lay flat during assembly.
 
+CAUTION: The intern HDMI connector is located nearby. Excessively long screws may collide, particularly when using the ribbon-cable connector.
+
 ### Display Blank (optional)
 
 If using the blank panel instead of an HDMI display, place the 4 mounting post inserts for the ULX3S and the 2 display posts used for the mounting brackets. There are 2 display mounting post holes included in the mock-up to match the real display but are not used.
@@ -548,9 +550,9 @@ Screws up to M3 x 20 mm can be used, allowing the flexibility of the optional OL
 
 ## Problems, Questions, Comments?
 
-- Open a [GitHub issue at github.com/gojimmypi/ulx3s-elecrow-7inch-hdmi-enclosure](https://github.com/gojimmypi/ulx3s-elecrow-7inch-hdmi-enclosure/issues/new)
+- Open a [GitHub issue](https://github.com/gojimmypi/ulx3s-elecrow-7inch-hdmi-enclosure/issues/new)
 
-- Send me an email (at gmail).
+- Send me (gojimmypi) an email at gmail.
 
 - Contact me on your favorite social media. See links at the top of [gojimmypi.github.io](https://gojimmypi.github.io/)
 
@@ -562,4 +564,3 @@ and reading FPGA Books such as [Kevin Hubbard's Mastering FPGA Chip Design](http
 There's a [Pull Request to add ULX3S HDMI resolutions for displays such as an Elecrow HDMI display](https://github.com/BrunoLevy/learn-fpga/pull/146).
 
 See also [ulx3s.github.io/](https://ulx3s.github.io/) and reach out on [Discord](https://discord.com/channels/690209441953480758/1081150712479764530) with any questions.
-

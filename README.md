@@ -9,41 +9,22 @@ See related links:
 
 - [ULX3S Crowd Supply Campaign](https://www.crowdsupply.com/radiona/ulx3s)
 - [ULS3S from Mouser](https://www.mouser.com/c/?q=ulx3s)
-- [Elecrow HDMI display from Amazon](https://www.amazon.com/dp/B08FMNDDSL) on Amazon.
+- [Elecrow HDMI display from Amazon](https://www.amazon.com/dp/B08FMNDDSL) on Amazon
 - [ulx3s.github.io](https://ulx3s.github.io/) for some sample ULX3S projects
-
-## License
-
-See [LICENSE](./LICENSE). In short:
-
-The [Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-lets anyone copy, share, and modify this enclosure design worldwide and royalty-free, as long as users
-
-- (1) give proper attribution
-- (2) use it only for non-commercial purposes
-- (3) distribute any modified versions under the same license (ShareAlike).
-
-It is irrevocable provided users follow the terms, does not grant patent or trademark rights,
-and includes strong warranty and liability disclaimers (the work is provided "as-is").
-If someone violates the terms, their rights terminate automatically but can be reinstated
-if they fix the issue within 30 days. In short, it allows open collaboration and remixing,
-but blocks commercial use and requires derivatives to stay under the same non-commercial license.
-
-A commercial license is available. Contact me: https://gojimmypi.github.io/
 
 ## Warnings
 
 - Don't use external and internal HDMI concurrently. Pick one.
-- Don't use USB Touch and USB power at the same time. Pick one.
-- FPGA Programming of an HDMI display may result in pseudo "burn-in". See [YouTube video](https://www.youtube.com/watch?v=WJaRHJX4xYA) to resolve.
+- Don't use USB Touch and USB Power connectors at the same time. Pick one.
+- Experimental FPGA Programming of an HDMI display may result in pseudo "burn-in". See [YouTube video](https://www.youtube.com/watch?v=WJaRHJX4xYA) to resolve.
 
 ## Specification Summary
 
 Designed with Autodesk Fusion for the [Prusa MK3S 3D Printer](https://help.prusa3d.com/product/mk3s) using PETG Filament.
-Sliced with PrusaClicer 2.9.4.
+Sliced with PrusaSlicer 2.9.4.
 
-The latest [Prusa MK3S](https://help.prusa3d.com/product/mk3s) firmware was used: [`MK3S_MK3S+_FW_3.14.1_MULTILANG.hex`](https://www.prusa3d.com/downloads/firmware/prusa3d_fw_3_14_1_MK3S.zip). Copy [here](./firmware/)
-It is completely intolerant to intermittent sensor failures. See [MINTEMP BED error](https://help.prusa3d.com/article/mintemp-error-and-mintemp-bed_2169)
+The latest [Prusa MK3S](https://help.prusa3d.com/product/mk3s) firmware was used: [`MK3S_MK3S+_FW_3.14.1_MULTILANG.hex`](https://www.prusa3d.com/downloads/firmware/prusa3d_fw_3_14_1_MK3S.zip).
+There's a copy [here](./firmware/). Note this version is completely intolerant to intermittent sensor failures. See [MINTEMP BED error](https://help.prusa3d.com/article/mintemp-error-and-mintemp-bed_2169).
 
 #### Default Fusion settings:
 
@@ -223,9 +204,28 @@ Currently the original official; files are only located at https://github.com/go
 TODO publish to other locations:
 
 - https://www.printables.com/@gojimmypi_17688
-- Thingverse
-- Etsy
+- https://www.thingiverse.com/gojimmypi/designs
+- https://www.etsy.com/people/gojimmypi
 - https://www.elecrow.com/share-projects.html
+
+## License
+
+See [LICENSE](./LICENSE). In short:
+
+The [Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+lets anyone copy, share, and modify this enclosure design worldwide and royalty-free, as long as users
+
+- (1) give proper attribution
+- (2) use it only for non-commercial purposes
+- (3) distribute any modified versions under the same license (ShareAlike).
+
+It is irrevocable provided users follow the terms, does not grant patent or trademark rights,
+and includes strong warranty and liability disclaimers (the work is provided "as-is").
+If someone violates the terms, their rights terminate automatically but can be reinstated
+if they fix the issue within 30 days. In short, it allows open collaboration and remixing,
+but blocks commercial use and requires derivatives to stay under the same non-commercial license.
+
+A commercial license is available. Contact me: https://gojimmypi.github.io/
 
 ## Links
 
