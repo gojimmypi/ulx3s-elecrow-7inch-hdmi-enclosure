@@ -4,6 +4,9 @@ This is an enclosure for the [ULX3S FPGA + ESP32](https://radiona.org/ulx3s/) de
 for use with the [Elecrow 7 inch HDMI display](https://www.elecrow.com/rc070s-7-inch-1024-600-ips-hdmi-capacitive-touch-monitor.html),
 such as [this one available on Amazon](https://www.amazon.com/dp/B08FMNDDSL).
 
+<img width="2048" height="1152" alt="image" src="https://github.com/user-attachments/assets/9ce5c58e-741f-4a59-898d-63a27b0dfa25" />
+
+
 The enclosure is not perfect. Some minor remaining ideas for improvement are in the [To-Do list](./TODO.md).
 
 See related links:
@@ -215,7 +218,7 @@ TODO publish to other locations:
 
 See [LICENSE](./LICENSE). In short:
 
-The [Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+The [Creative Commons Attribution - NonCommercial - ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 lets anyone copy, share, and modify this enclosure design worldwide and royalty-free, as long as users
 
 - (1) give proper attribution
