@@ -1,11 +1,10 @@
-# ULX3S 7inch HDMI Diplay-H Elecrow Enclosure
+# ULX3S Elecrow 7 inch HDMI Display Enclosure
 
 This is an enclosure for the [ULX3S FPGA + ESP32](https://radiona.org/ulx3s/) development and educational board
 for use with the [Elecrow 7 inch HDMI display](https://www.elecrow.com/rc070s-7-inch-1024-600-ips-hdmi-capacitive-touch-monitor.html),
 such as [this one available on Amazon](https://www.amazon.com/dp/B08FMNDDSL).
 
 <img width="2048" height="1152" alt="image" src="https://github.com/user-attachments/assets/9ce5c58e-741f-4a59-898d-63a27b0dfa25" />
-
 
 The enclosure is not perfect. Some minor remaining ideas for improvement are in the [To-Do list](./TODO.md).
 
@@ -18,6 +17,7 @@ See related links:
 
 ## Warnings
 
+- Choking hazard for small parts. Keep away from children and pets.
 - Don't use external and internal HDMI concurrently. Pick one.
 - Don't use USB Touch and USB Power connectors at the same time. Pick one.
 - Experimental FPGA Programming of an HDMI display may result in pseudo "burn-in". See [YouTube video](https://www.youtube.com/watch?v=WJaRHJX4xYA) to resolve.
@@ -30,7 +30,7 @@ Sliced with PrusaSlicer 2.9.4.
 The latest [Prusa MK3S](https://help.prusa3d.com/product/mk3s) firmware was used: [`MK3S_MK3S+_FW_3.14.1_MULTILANG.hex`](https://www.prusa3d.com/downloads/firmware/prusa3d_fw_3_14_1_MK3S.zip).
 There's a copy [here](./firmware/). Note this version is completely intolerant to intermittent sensor failures. See [MINTEMP BED error](https://help.prusa3d.com/article/mintemp-error-and-mintemp-bed_2169).
 
-#### Default Fusion settings:
+#### Default Fusion settings
 
 - Refinement: Medium
 - Surface Deviation: 0.036706 mm
@@ -38,7 +38,7 @@ There's a copy [here](./firmware/). Note this version is completely intolerant t
 - Maximum Edge: 231.60045 mm (no practical limit)
 - Aspect Ration: 21.5 (Controls how "skinny" triangles are allowed to be)
 
-#### 3D Printer Settings:
+#### 3D Printer Settings
 
 - Material: PETG
 - Ambient temperature: > 75F
@@ -76,8 +76,8 @@ To [get started](./QUICK_START.md) quickly, printing all parts for the Prusa sli
   <a href="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" target="_blank"><img src="./images/part_ULX3S_To_RPi_Elecrow_Adapter.jpg" alt="part_ULX3S To RPi Elecrow Adapter" width="150" /></a>
 
 Note that the buttons are includes in the small parts set. If a separate color is desired for only the buttons, see the `Button Set` files. <br />
-- <a href="./images/part_button_set.jpg" target="_blank"><img src="./images/part_button_set.jpg" alt="part_button_set" width="150" /></a>
 
+- <a href="./images/part_button_set.jpg" target="_blank"><img src="./images/part_button_set.jpg" alt="part_button_set" width="150" /></a>
 
 The "0.15 Quality" has some critical changes in the `User Presets - 0.15mm QUALITY @MK3 - ULX3S Project`
 that were observed to make a difference between print success and failure.
@@ -205,14 +205,20 @@ There's a tight vertical clearance between the HDMI-HDMI connector board at the 
 
 ## Published Files
 
-Currently the original official; files are only located at https://github.com/gojimmypi/ulx3s-elecrow-7inch-hdmi-enclosure
+Currently the original official; files are only located at <https://github.com/gojimmypi/ulx3s-elecrow-7inch-hdmi-enclosure>
+
+[x] <https://cults3d.com/en/3d-model/various/ulx3s-hdmi-enclosure-for-the-elecrow-7-inch-display>
 
 TODO publish to other locations:
 
-- https://www.printables.com/@gojimmypi_17688
-- https://www.thingiverse.com/gojimmypi/designs
-- https://www.etsy.com/people/gojimmypi
-- https://www.elecrow.com/share-projects.html
+- <https://www.printables.com/@gojimmypi_17688>
+- <https://www.thingiverse.com/gojimmypi/designs>
+- <https://www.etsy.com/people/gojimmypi>
+- <https://www.elecrow.com/share-projects.html>
+- <https://grabcad.com/gojimmypi-1/models>
+- <https://thangs.com/designer/gojimmypi>
+- <https://www.myminifactory.com/users/gojimmypi>
+- <https://makerworld.com/en/@gojimmypi>
 
 ## License
 
@@ -231,7 +237,7 @@ If someone violates the terms, their rights terminate automatically but can be r
 if they fix the issue within 30 days. In short, it allows open collaboration and remixing,
 but blocks commercial use and requires derivatives to stay under the same non-commercial license.
 
-A commercial license is available. Contact me: https://gojimmypi.github.io/
+A commercial license is available. Contact me: <https://gojimmypi.github.io/>
 
 ## Links
 
@@ -240,5 +246,5 @@ A commercial license is available. Contact me: https://gojimmypi.github.io/
 - [Prusa Help: Layers and perimeters, detect thin walls](https://help.prusa3d.com/article/layers-and-perimeters_1748#detect-thin-walls)
 - [Prusa Help: Seam position](https://help.prusa3d.com/article/seam-position_151069)
 - [Digilent Pmod and FPGA: Connection Guide](https://digilent.com/blog/where-to-plug-in-your-pmod-fpga/)
-- [openFPGALoader WEB interface - ofl.trabucayre.com ](https://ofl.trabucayre.com/), from [github.com/trabucayre/openFPGALoader](https://github.com/trabucayre/openFPGALoader)
+- [openFPGALoader WEB interface - ofl.trabucayre.com](https://ofl.trabucayre.com/), from [github.com/trabucayre/openFPGALoader](https://github.com/trabucayre/openFPGALoader)
 - [ULX3S examples from the Legendary Lawrie Griffiths](https://github.com/lawrie/ulx3s_examples/tree/master)
