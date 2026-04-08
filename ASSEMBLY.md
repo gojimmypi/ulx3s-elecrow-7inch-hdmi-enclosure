@@ -12,7 +12,7 @@ If a display is not used, there's an optional blank panel mock-up available inst
 
 ## Licensing and Marketing Affiliation
 
-The enclosure is open source, with a paid commercial license available. See the [LICENSE](./LICENSE.md) file.
+The enclosure is open source, with a paid commercial license available. See the [LICENSE](./LICENSE) file.
 
 There are no paid marketing affiliations. Related product links are included for convenience only.
 
@@ -37,7 +37,6 @@ There are no paid marketing affiliations. Related product links are included for
 - Blocking internal support posts with wires
 
 - Cutting light pipes too long (causes enclosure bulge)
-
 
 ## Tips for Success
 
@@ -77,9 +76,26 @@ particularly the small ones used here. A [vertical heat set press tool](https://
 - Parts were designed and printed assuming a 0.4 mm nozzle and 0.15 mm layer height.
 - 3D printed in 25C (80F) ambient environment, with no brim, on a textured sheet, cleaned with IPA before each use.
 
+## Filament
+
+Tested with [Creality PETG 3D Printer Filament 1.75 mm](https://www.amazon.com/dp/B0C8NP63GD) and [Prusament PETG Jet Black](https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/).
+
+The Prusament has been very successful and robust for years.
+
+Some deep-spool tangles were encountered for the first time using Creality. Their [response](./images/creality_support_reply.jpg)?
+
+> respool your spools to prevent tangling on your future printing.
+
+See also these suggested tangle prevention techniques:
+
+- <https://www.youtube.com/watch?v=PaUfrRCd258>
+- <https://www.youtube.com/watch?v=uf66_3bzIgc>
+
+Untested yet, but next non-Prusament filament test will be Polymaker PETG.
+
 ## Parts List
 
-Most parts are 3D printed. Tested with [Creality PETG 3D Printer Filament 1.75 mm](https://www.amazon.com/dp/B0C8NP63GD) and [Prusament PETG Jet Black](https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/).
+Most parts are 3D printed.
 
 Mechanical connections are made with either 3D printed friction clips or heat-set brass inserts and metal screws as needed.
 
@@ -94,6 +110,12 @@ For most of the enclosure, M3 inserts are used. There are 6 M2.5 screws used wit
 Two M2 screws inserts are needed for the optional OLED frame.
 
 Use an insert temperature of about 210 C. Insert gently and steadily. Avoid moving too slowly, as excessive heat can deform the plastic.
+
+The [heat-set inserts](https://www.amazon.com/dp/B0FWWW8VP1) are the non-symmetric ones with an insertion lip (left) and have 4.1 mm holes:
+
+<a href="./images/two_types_of_heat_set_inserts.jpg" target="_blank"><img src="./images/two_types_of_heat_set_inserts.jpg" alt="two types of heat set inserts" width="150" /></a>
+
+Screws are [M3 Philips Countersunk](https://www.amazon.com/dp/B0FZTYBXPY). Consider coordinating with enclosure color.
 
 ### ULX3S Enclosure Internal
 
@@ -139,13 +161,11 @@ TODO finish this list, see above
 | M2.5   | 2.0 mm     | 1.5 mm       |
 | M3     | 2.5 mm     | 2.0 mm       |
 
-
 ## 3D Printed Parts
 
 In addition to the enclosure main body front and back, there are a variety of other parts that can optionally be used.
 
 <a href="./images/enclosure_parts.png" target="_blank"><img src="./images/enclosure_parts.png" alt="part_button_set"/></a>
-
 
 | Part | Description |
 | ---- | ----------- |
@@ -164,7 +184,7 @@ In addition to the enclosure main body front and back, there are a variety of ot
 | <a href="./images/part_j4_cover.jpg" target="_blank"><img src="./images/part_j4_cover.jpg" alt="part_j4_cover" width="150" /></a> | J4 Cover |
 | <a href="./images/part_keyhole_adapter.jpg" target="_blank"><img src="./images/part_keyhole_adapter.jpg" alt="part_keyhole_adapter" width="150" /></a> | Keyhole Adapter |
 | <a href="./images/part_keyhole_internal_adapter.jpg" target="_blank"><img src="./images/part_keyhole_internal_adapter.jpg" alt="part keyhole internal dapter" width="150" /></a> | Keyhole Internal Adapter Face Insert |
-| <a href="./images/part_light_pipe_sample.jpg" target="_blank"><img src="./images/part_light_pipe_sample.jpg" alt="part light pipe sample" width="150" /></a> | Light Pipe Sample (not part of the assembly; used to test optic fit)
+| <a href="./images/part_light_pipe_sample.jpg" target="_blank"><img src="./images/part_light_pipe_sample.jpg" alt="part light pipe sample" width="150" /></a> | Light Pipe Sample (not part of the assembly; used to test optic fit)|
 | <a href="./images/part_oled_frame.jpg" target="_blank"><img src="./images/part_oled_frame.jpg" alt="part_oled_frame" width="150" /></a> | OLED Frame |
 | <a href="./images/part_stand.jpg" target="_blank"><img src="./images/part_stand.jpg" alt="part_stand" width="150" /></a> | Stand |
 | <a href="./images/part_stand_mounting_plate.jpg" target="_blank"><img src="./images/part_stand_mounting_plate.jpg" alt="part_stand_mounting_plate" width="150" /></a> | Stand Mounting Plate; Philips default, see alternative Hex Head screw files |
@@ -192,7 +212,6 @@ There are optional headers that may need to be soldered to the ULX3S board:
 Note: The fan connector on the Elecrow 7 inch display collides with pins on ULX3S J2 when using a block header. Trim the plastic housing and/or the J2 header pins on the underside of the board.
 
 <a href="./images/ULX3S-clearance-view-fan-highlight.jpg" target="_blank"><img src="./images/ULX3S-clearance-view-fan-highlight.jpg" alt="enclosure_display_side" width="150" /></a>
-
 
 ## Install Heat-Set Inserts
 
@@ -238,7 +257,6 @@ Choose a mounting plate for the screws used, then install the 4 bottom mounting 
 
 <a href="./images/enclosure_stand_mounting_bracket.jpg" target="_blank"><img src="./images/enclosure_stand_mounting_bracket.jpg" alt="enclosure_stand_mounting_bracket" width="150" /></a>
 
-
 ### Install Brass OLED Frame Mounting Screw Inserts on ULX3S Face Side
 
 The OLED display side uses smaller M2 screws to secure the SSD 1331 PCB and OLED face frame to the enclosure.
@@ -256,8 +274,6 @@ Only install the inserts. Do not mount the OLED screen at this time to allow the
 There are 8 general purpose LEDs and 3 system LEDs on the ULX3S that can be better illuminated on the enclosure face with [2 mm (0.08 inch) fiber optic light pipes](https://www.amazon.com/dp/B0BLH9TSHV).
 
 When using 2 mm fiber optic pipes, the fit is rather tight in the holes due to dimensional constraints when using a 0.4 mm 3D printer nozzle: 2.54 mm between holes.
-
-
 
 The light pipe blocks have holes positioned directly over the LEDs on the ULX3S board. To improve brightness on the enclosure face, optional fiber optic filament can be inserted into each hole.
 
@@ -358,7 +374,6 @@ The Elecrow display was designed for the Raspberry Pi, not the ULX3S. As such, t
 
 <a href="./images/ULX3S_mounting_hole_mismatch_to HDMI_7inch_display.jpg" target="_blank"><img src="./images/ULX3S_mounting_hole_mismatch_to HDMI_7inch_display.jpg" alt="display_blank_stubout_view" width="150" /></a>
 
-
 ### Install Mounting Adapter Spacers
 
 Ensure the 2 Mounting Adapter Spacers are installed underneath the Mounting Adapter first. These spacers should be the same height as the metal
@@ -403,16 +418,14 @@ Note the clearance between the ULX3S. There's an unfortunate placement of a whit
 
 <a href="./images/ULX3S-clearance-view.jpg" target="_blank"><img src="./images/ULX3S-clearance-view.jpg" alt="ULX3S clearance view" width="150" /></a>
 
-
 If there is no A1-A1 adapter board available, there's enough room for a [short 10 cm A1-A1](https://www.amazon.com/dp/B0F1TBRSMZ/ref=dp_iou_view_item?ie=UTF8&psc=1).
 
 Use caution with the Amazon links that redirect to similar, but _incompatible_ connectors when out of stock.
-*There's only room for the A1-A1*, not any of the angled connectors (e.g. A1-A2, A1-A3). The reversed position connector is not recommended as the cable would need to be twisted (e.g. A1-C1).
+_There's only room for the A1-A1_, not any of the angled connectors (e.g. A1-A2, A1-A3). The reversed position connector is not recommended as the cable would need to be twisted (e.g. A1-C1).
 
 For reference, see the A1 options for HDMI cables:
 
 ![A1-HDMI-connector-list.jpg](./images/A1-HDMI-connector-list.jpg)
-
 
 ## Place Buttons in ULX3S side
 
@@ -536,7 +549,6 @@ Once plugged in, attach the OLED Face Frame to the enclosure with 2 screws: M2 x
 
 <a href="./images/oled_faceframe_screws.jpg" target="_blank"><img src="./images/oled_faceframe_screws.jpg" alt="oled faceframe screws" width="150" /></a>
 
-
 ## Attach Front Display and Rear ULX3S Sides of Enclosure Together
 
 As the OLED frame (see prior step) extends nearly 7 mm from the face of the enclosure, consider
@@ -556,7 +568,7 @@ Screws up to M3 x 20 mm can be used, allowing the flexibility of the optional OL
 
 - Contact me on your favorite social media. See links at the top of [gojimmypi.github.io](https://gojimmypi.github.io/)
 
-## Enjoy!
+## Enjoy
 
 Proceed to learn more about FPGA programming by visiting [Bruno Levy's "Learning FPGA, yosys, nextpnr, and RISC-V"](https://github.com/BrunoLevy/learn-fpga)
 and reading FPGA Books such as [Kevin Hubbard's Mastering FPGA Chip Design](https://www.elektor.com/products/mastering-fpga-chip-design-e-book) (See the [extract](https://issuu.com/eimworld/docs/mastering_fpga_chip_design_extract_)).
@@ -564,3 +576,7 @@ and reading FPGA Books such as [Kevin Hubbard's Mastering FPGA Chip Design](http
 There's a [Pull Request to add ULX3S HDMI resolutions for displays such as an Elecrow HDMI display](https://github.com/BrunoLevy/learn-fpga/pull/146).
 
 See also [ulx3s.github.io/](https://ulx3s.github.io/) and reach out on [Discord](https://discord.com/channels/690209441953480758/1081150712479764530) with any questions.
+
+## Did you make one?
+
+I'd love to hear how it went! Good things, suggestions for improvements.
