@@ -12,6 +12,11 @@
 - [ ] Ensure chamfer is deep enough for flat hex head screws; currently only Philips are flush. Issue only with mounting plate. See `M3_Countersink_Chamfer` dimension. A value of 1.3 mm works for Philips, but hex heads protrude a bit. Edit to 2.0 mm. Added second set of files for Hex Head.
 - [ ] Reposition stand mounting screws for symmetry. Recent change extending plate to face broke symmetry.
 - [ ] Consider recess for volume knob
+- [ ] Add knurl to face spacers to act as disassembly knobs
+- [ ] Create optional chamfer spacers for ULX3S mounting Philips countersunk screws
+- [ ] Increase chamfer depth on mounting plate screw holes
+- [ ] Create or revise stand to fit _inside_ the enclosure for storage
+- [ ] Adjust J3 and J4 that break using brittle non-Prusament filament
 
 ## Adapter
 
